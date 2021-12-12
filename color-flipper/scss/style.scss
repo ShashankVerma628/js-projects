@@ -1,0 +1,49 @@
+@import "../scss/resets";
+@import "../scss/config";
+@import "../scss/utility";
+
+
+body {
+    background: #121212;
+    font-family: "Roboto", sans-serif;
+    @include flexCenter(row);
+    height: 100vh;
+    letter-spacing: 0.1rem;
+    transition: all 0.2s ease-in;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+.selection-btn{
+    // display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.2em 1em;
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 5px solid #000;
+}
+
+
+.color{
+    padding: 0.3em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 5px grey;
+}
+
+
+.hide{
+    display: none;
+}
+
+#rgb{
+    .color{
+        font-size: 2rem;
+    }
+}

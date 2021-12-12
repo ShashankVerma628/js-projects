@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  padding: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.btn {
+  padding: 1em;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 4px grey;
+          box-shadow: 4px 4px 4px grey;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body {
+  background: #121212;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2em;
+  height: 100vh;
+  letter-spacing: 0.1rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.selection-btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.2em 1em;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 5px solid #000;
+}
+
+.color {
+  padding: 0.3em;
+  border-radius: 20px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+.hide {
+  display: none;
+}
+
+#rgb .color {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

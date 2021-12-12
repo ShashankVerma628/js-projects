@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(223, 223, 223, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+.container {
+    width: 60%;
+}
+
+h1 {
+    font-family: 'Corinthia', cursive;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 5rem;
+}
+
+.question {
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    color: #fff;
+    padding: 0.3em 1em;
+}
+
+button {
+    background: transparent;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+button i {
+    background: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: rotate(90deg);
+}
+
+.question-text {
+    background: lightblue;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.minus-icon {
+    display: none;
+}
+.show-text .question-text{
+    display: block;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+.show-text .minus-icon{
+    display: inline;
+}

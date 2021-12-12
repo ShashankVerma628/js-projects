@@ -1,0 +1,39 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    gap: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    @include flexCenter(column);
+    padding: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn{
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px grey;
+    display: inline-block;
+    margin-top: 50px;
+
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+.btn-container{
+    display: flex;
+    width: 100%;
+}
+

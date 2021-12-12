@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn-container">
+            <div class="selection-btn active hex-btn">
+                Hex
+            </div>
+            <div class="selection-btn rgb-btn">
+                rgb
+            </div>
+        </div>
+        <div class="windo" id="hex">
+            <h1>Color : <span class="color">#ffff</span></h1>
+            <button class="btn">Random</button>
+        </div>
+        <div class="window hide" id="rgb">
+            <h1>Color : <span class="rgb-color color">rgb(<span class="first">13</span>,<span class="second">23</span>,
+                    <span class="third">45</span> )</span></h1>
+            <button class="rgb-random-btn btn">Random</button>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

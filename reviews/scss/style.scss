@@ -1,0 +1,74 @@
+@import "../scss/resets";
+@import "../scss/config";
+@import "../scss/utility";
+
+.wrapper {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: $primaryBg;
+}
+
+.underline {
+    background: $textColor;
+    width: 100px;
+    height: 2px;
+    margin-bottom: 2em;
+}
+
+.container {
+    border: 1px solid $textColor;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 20px;
+    padding: 1em;
+}
+.review-container {
+    padding: 1em;
+    @include flexCenter(column);
+    gap: 1em;
+
+    .img-container {
+        width: 200px;
+
+        img {
+            border-radius: 100%;
+            border-right: 10px solid $clrPrimary;
+        }
+    }
+
+    // designation
+    .designation {
+        color: $textColor;
+        text-transform: uppercase;
+    }
+}
+.btn {
+    border: none;
+    display: inline-block;
+    background: transparent;
+    color: $textColor;
+    cursor: pointer;
+    font-size: 2rem;
+
+    &-container {
+        @include flexCenter(row);
+        gap: 2em;
+    }
+
+    &.random {
+        text-transform: capitalize;
+        border: 1px solid $textColor;
+        padding: 0.3em 1em;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        transition: all 0.2s ease-in;
+
+        &:hover,
+        &:focus {
+            background: $textColor;
+            color: #fff;
+        }
+    }
+}

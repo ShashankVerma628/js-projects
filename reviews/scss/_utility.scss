@@ -1,0 +1,21 @@
+@mixin flexCenter($dir){
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    max-width: 800px;
+    margin: auto;
+    @include flexCenter(column);
+}
+
+.underline{
+    height: 20px;
+    background: $textColor;
+
+}

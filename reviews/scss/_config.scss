@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+$clrPrimary: hsl(205, 63%, 48%);
+$textColor : hsl(205, 72%, 37%);
+$primaryBg:hsl(205, 100%, 96%);
+
+
+.wrapper{
+    background: $primaryBg;
+}
+
