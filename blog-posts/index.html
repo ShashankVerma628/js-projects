@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="blog, blog post, post, posts" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="User can view all the posts" />
+    <meta name="author" content="shashank verma" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- container -->
+        <div class="container">
+            <form id="search-form">
+                <input type="text" id="search-input" />
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+
+            <section class="blogs-container">
+                <h1>Blogs List</h1>
+                <ul class="blogs">
+                    <li class="blog">
+                        <div class="blog-header">
+                            <h2 id="blog-title">title</h2>
+                            <h3>Post Id : <span id="blog-id"></span></h3>
+                        </div>
+                        <div class="blog-body">
+                            <p id="blog-content">Blog Body is so big</p>
+                        </div>
+                        <div class="blog-footer">
+                            <h3>Posted By : <span id="user-id">userId</span></h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+
+        <!-- container ends -->
+    </div>
+    <!-- wrapper ends -->
+    <!-- script tag -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
